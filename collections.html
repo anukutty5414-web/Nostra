@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOSTRA-ECOMMERCE</title>
+
+<!-- Tailwind CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.offer{
+background-color:#1f2933;
+color:white;
+text-align:center;
+padding:10px;
+font-family:Arial;
+}
+
+.close{
+float:right;
+margin-right:15px;
+}
+.container{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:220px;
+padding:20px;
+border-right:2px solid #ccc;
+}
+
+.sidebar h3{
+margin-top:20px;
+margin-bottom: 10px;
+}
+.sidebar label{
+  display: block;
+  margin: 6px 0;
+}
+
+/* Product area */
+
+.products{
+flex:1;
+padding:20px;
+}
+
+/* Search box */
+
+.search{
+width:100%;
+padding: 10px;
+margin-bottom:25px;
+border:1px solid gray;
+}
+
+/* Product grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+justify-items:center;
+}
+
+.card{
+  width:220px;
+text-align:center;
+}
+
+.card img{
+width:220px;
+height:280px;
+object-fit: cover;
+}
+.card h4{
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.price{
+  margin-top: 4px;
+  color: gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="offer"id="offerbar">
+  <span class="close" onclick="document.getElementById('offerbar').style.display='none'">×</span>
+Sign Up and <b>GET 20% OFF</b> for your first Order
+</div>
+<!-- Navbar -->
+<nav class="flex items-center justify-between p-10">
+
+<h1 class="text-2xl font-bold">Nostra</h1>
+    <svg id="menuicon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 md:hidden">
+  <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+</svg>
+
+
+<ul class="flex gap-5 text-gray-600 hidden md:flex">
+<li><a class="hover:underline" href="index.html">Home</a></li>
+<li><a class="hover:underline" href="index.html">New Arrival</a></li>
+<li><a class="hover:underline" href="index.html">Most Wanted</a></li>
+<li><a class="hover:underline" href="collections.html">Collections</a></li>
+<li><a class="hover:underline" href="contactus.html">Contact Us</a></li>
+</ul>
+
+</nav>
+<!--side navbar-->
+<section id="sidenav"class="bg-green-100 black fixed z-20 top-0 transtion-all duration-1000"style="width:50%;height:100vh;right:-50%;">
+<div class="text-right p-5">
+<p id="closenav"class="inline cursor-pointer">x</p>
+</div>
+<ul class="flex flex-col gap-10 item-center text-gray-600 ">
+<li><a class="hover:underline" href="index.html">Home</a></li>
+<li><a class="hover:underline" href="index.html">New Arrival</a></li>
+<li><a class="hover:underline" href="index.html">Most Wanted</a></li>
+<li><a class="hover:underline" href="collections.html">Collections</a></li>
+<li><a class="hover:underline" href="contactus.html">Contact Us</a></li>
+</ul>
+</section>
+<div class="container">
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h3 class="text 2xl font-bold">Occasion</h3>
+<input type="checkbox"> Summer<br>
+<input type="checkbox"> Party<br>
+<input type="checkbox"> Beach<br>
+
+<h3 class="text 2xl font-bold">Colors</h3>
+<input type="checkbox"> Red<br>
+<input type="checkbox"> Blue<br>
+<input type="checkbox"> White<br>
+<input type="checkbox"> Green<br>
+
+<h3 class="text 2xl font-bold">Arrivals</h3>
+<input type="checkbox"> New<br>
+<input type="checkbox"> Old<br>
+
+</div>
+<!-- Products -->
+
+<div class="products">
+
+<input class="search" type="text" placeholder="Search">
+
+<div class="grid">
+
+<div class="card">
+<img src="image18.jpg">
+<h4 class="text 3xl font-bold">Floral Summer </h4>
+<p class="price">450</p>
+</div>
+
+<div class="card">
+<img src="image16.jpg">
+<h4 class="text 3xl font-bold">Summer Green</h4>
+<p class="price">₹260</p>
+</div>
+
+<div class="card">
+<img src="image15.jpg">
+<h4 class="text 3xl font-bold">summer Floral white</h4>
+<p class="price">₹399</p>
+</div>
+
+<div class="card">
+<img src="image14.jpg">
+<h4 class="text 3xl font-bold">Beach dress pink</h4>
+<p class="price">₹300</p>
+</div>
+
+<div class="card">
+<img src="image13.jpg">
+<h4 class="text 3xl font-bold">different color Floral</h4>
+<p class="price">₹280</p>
+</div>
+
+<div class="card">
+<img src="image12.jpg">
+<h4 class="text 3xl font-bold">Casual top</h4>
+<p class="price">₹250</p>
+</div>
+
+<div class="card">
+<img src="image11.jpg">
+<h4 class="text 3xl font-bold">white dress</h4>
+<p class="price">₹300</p>
+</div>
+
+<div class="card">
+<img src="image10.jpg">
+<h4 class="text 3xl font-bold">rose Floral</h4>
+<p class="price">₹500</p>
+</div>
+
+<div class="card">
+<img src="image.jpg">
+<h4 class="text 3xl font-bold">Casual top</h4>
+<p class="price">₹450</p>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+<!--news letters-->
+<section class="text-center p-6">
+<h1 class="text-3xl font-bold mt-5">Join our Newsletter</h1>
+<p class="mb-3">Signup for exclusive discounts and updates</p>
+
+<input 
+type="text" 
+placeholder="Enter your email"
+class="border border-black p-2 w-4/5 md:w-1/2 rounded">
+
+<br>
+
+<button class="bg-black text-white px-6 py-2 mt-3 rounded">
+Subscribe
+</button>
+
+</section>
+
+
+<!-- Footer -->
+<section class="bg-black text-white p-10 flex flex-col gap-5">
+<h1 class="text-4xl font-bold">Nostra</h1>
+<p>The standard chunk of lorem ipsum used since the 1500s.</p>
+<p>©2026 Nostra.com</p>
+</section>
+<script src="collections.js"></script>
+</body>
+</html>
